@@ -1,0 +1,136 @@
+/* Custom CSS for Shoe Shop */
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Product card styling */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-img-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img-container img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #dc3545;
+    font-size: 1.2rem;
+}
+
+/* Product detail page */
+.product-detail-img {
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+}
+
+/* Cart styles */
+.cart-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #3f51b5;
+    border-color: #3f51b5;
+}
+
+.btn-primary:hover {
+    background-color: #303f9f;
+    border-color: #303f9f;
+}
+
+/* Admin panel styles */
+.admin-sidebar {
+    min-height: calc(100vh - 200px);
+    background-color: #343a40;
+    padding: 20px 0;
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 10px 20px;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login and Register pages */
+.auth-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-img-container {
+        height: 150px;
+    }
+    
+    .cart-img {
+        max-width: 60px;
+    }
+}
